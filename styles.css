@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+    --white:  hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#omeletteImg{
+    width: 100%;
+    height: 100%; 
+}
+.text{
+    padding: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding:0;
+    
+}
+h1{
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    font-size: 42px;
+    color: var(--stone-900);
+}
+#introPara{
+    font-family: 'Outfit', sans-serif;
+    font-weight:400 ;
+    font-size: 20px;
+    color: var(--stone-600);
+    margin: 20px 0;
+}
+#preparationTime{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--rose-50);
+    padding: 40px;
+    border-radius: 20px;
+}
+#preparationTime h4{
+    font-family: 'Outfit', sans-serif;
+    font-weight:600 ;
+    font-size: 24px;
+    color: var(--rose-800);
+    margin: 10px 0;
+}
+#preparationTime ul{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-weight:400 ;
+    font-size: 18px;
+    color: var(--stone-600);
+    width: 16rem;
+}
+#ingredients{
+    border-bottom: 1px solid var(--stone-150);
+    padding: 20px;
+}
+#ingredients h4{
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: var(--brown-800);
+    margin: 20px 0;
+}
+#ingredients ul{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-weight:400 ;
+    font-size: 18px;
+    color: var(--stone-600);
+    width: 16rem;
+}
+#instructions{
+    border-bottom: 1px solid var(--stone-150);
+    padding: 20px;
+}
+#instructions h4{
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: var(--brown-800);
+    margin: 20px 0;
+}
+#instructions ol{
+     display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-weight:400 ;
+    font-size: 18px;
+    color: var(--stone-600);
+    width: 21rem;
+}
+#nutrition{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+#nutrition h4{
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: var(--brown-800);
+    margin: 20px 0;
+}
+#nutrition p{
+    font-family: 'Outfit', sans-serif;
+    font-weight:400 ;
+    font-size: 18px;
+    color: var(--stone-600);
+    width: 21rem;
+}
+#nutrition table{
+    width: 20rem;
+}
+#nutrition table tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Outfit', sans-serif;
+    font-weight:400 ;
+    font-size: 18px;
+    color: var(--stone-600);
+    border-bottom: 1px solid var(--stone-150);
+    padding: 20px;
+
+}
+
+#emp{
+  color: var(--brown-800);  
+}
+/* Styling for desktop and medium devices */
+@media only screen and (min-width: 768px){
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--rose-50);
+}
+.container{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    background-color: white;
+    justify-content: center;
+    margin-top: 5%;
+    border-radius: 20px;
+}
+#omeletteImg{
+    max-width: 50rem;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2%;
+    padding: 0; 
+    border-radius: 20px;   
+}
+h1{
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--stone-900);
+}
+#introPara{
+    font-family: 'Outfit', sans-serif;
+    font-weight:400 ;
+    font-size: 18px;
+    color: var(--stone-600);
+    margin: 20px 0;
+}
+#preparationTime ul{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-weight:400 ;
+    font-size: 16px;
+    color: var(--stone-600);
+    width: 20rem;
+}
+#ingredients ul{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-weight:400 ;
+    font-size: 16px;
+    color: var(--stone-600);
+    width: 36rem;
+}
+#instructions ol{
+     display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-weight:400 ;
+    font-size: 16px;
+    color: var(--stone-600);
+    width: 40rem;
+}
+#nutrition p{
+    font-family: 'Outfit', sans-serif;
+    font-weight:400 ;
+    font-size: 16px;
+    color: var(--stone-600);
+    width: 40rem;
+}
+#nutrition table tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Outfit', sans-serif;
+    font-weight:400 ;
+    font-size: 16px;
+    color: var(--stone-600);
+    border-bottom: 1px solid var(--stone-150);
+    padding: 20px;
+
+}
+#nutrition table{
+    width: 28rem;
+}
+
+}
